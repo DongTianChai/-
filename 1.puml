@@ -1,0 +1,25 @@
+@startuml
+class Unite1_extends.Test {
++ {static} void main(String[])
+}
+class Unite1_extends.Animal {
+- String name
+- int age
++ String getName()
++ void setName(String)
++ int getAge()
++ void setAge(int)
++ String info()
+~ void shout()
+}
+class Unite1_extends.Cat {
+- String color
++ String info()
+~ void shout()
++ String getColor()
++ void setColor(String)
+}
+
+
+Unite1_extends.Animal <|-- Unite1_extends.Cat
+@enduml
